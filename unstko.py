@@ -3,7 +3,7 @@
 from plumbum import cli
 
 class Unstko(cli.Application):
-    PROGNAME = "unstko CLI"
+    PROGNAME = "unstko"
     VERSION = "0.1"
     DESCRIPTION = "The command line interface (CLI) with Applications from @unstko"
 
