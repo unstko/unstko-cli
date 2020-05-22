@@ -15,5 +15,7 @@ class Unstko(cli.Application):
             print("No command given")
             return 1
 
+Unstko.subcommand("linux", "linux.unstko_linux.UnstkoLinux")
+
 if __name__ == "__main__":
     Unstko.run()
