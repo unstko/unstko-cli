@@ -10,5 +10,7 @@ class UnstkoLinux(cli.Application):
     def main(self):
         print("Linux")
 
+UnstkoLinux.subcommand("update-system", "update_system.UpdateSystem")
+
 if __name__ == "__main__":
     UnstkoLinux().run()

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from plumbum import cli
+from linux import unstko_linux
 
 class Unstko(cli.Application):
     PROGNAME = "unstko"
@@ -16,6 +17,7 @@ class Unstko(cli.Application):
             return 1
 
 Unstko.subcommand("linux", "linux.unstko_linux.UnstkoLinux")
+unstko_linux.UnstkoLinux.subcommand("update-system", "linux.update_system.UpdateSystem")
 
 if __name__ == "__main__":
     Unstko.run()
