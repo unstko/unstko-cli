@@ -1,2 +1,2 @@
 # unstko-cli
-The command line interface (CLI) with Applications from @unstko
+Python command line interface (CLI) with applications from @unstko
