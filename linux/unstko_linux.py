@@ -2,6 +2,7 @@
 
 from plumbum import cli
 
+
 class UnstkoLinux(cli.Application):
     PROGNAME = "unstko linux"
     VERSION = "0.1"
@@ -14,6 +15,7 @@ class UnstkoLinux(cli.Application):
         if not self.nested_command:
             print("No command given")
             return 1
+
 
 UnstkoLinux.subcommand("update-system", "update_system.UpdateSystem")
 

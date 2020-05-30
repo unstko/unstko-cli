@@ -3,10 +3,12 @@
 from plumbum import cli
 from linux import unstko_linux
 
+
 class Unstko(cli.Application):
     PROGNAME = "unstko"
     VERSION = "0.1"
-    DESCRIPTION = "Python command line interface (CLI) with applications from @unstko"
+    DESCRIPTION = "Python command line interface (CLI) \
+        with applications from @unstko"
 
     def main(self, *args):
         if args:
@@ -16,8 +18,10 @@ class Unstko(cli.Application):
             print("No command given")
             return 1
 
+
 Unstko.subcommand("linux", "linux.unstko_linux.UnstkoLinux")
-unstko_linux.UnstkoLinux.subcommand("update-system", "linux.update_system.UpdateSystem")
+unstko_linux.UnstkoLinux.subcommand(
+    "update-system", "linux.update_system.UpdateSystem")
 
 if __name__ == "__main__":
     Unstko.run()
