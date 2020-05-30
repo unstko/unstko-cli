@@ -5,7 +5,7 @@ from plumbum import cli
 class Unstko(cli.Application):
     PROGNAME = "unstko"
     VERSION = "0.1"
-    DESCRIPTION = "The command line interface (CLI) with Applications from @unstko"
+    DESCRIPTION = "Python command line interface (CLI) with applications from @unstko"
 
     def main(self, *args):
         if args:
